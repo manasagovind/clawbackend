@@ -1,3 +1,6 @@
+const PORT=process.env.PORT ??4000
+
+
 const express=require("express");
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
@@ -139,6 +142,6 @@ app.delete("/todos/:id",authenticateToken,async(req,res)=>{
     }
 })
 
-app.listen(4000,()=>{
-    console.log("Server has started running on port 4000");
+app.listen(PORT,()=>{
+    console.log(`Server has started running on port  ${PORT}`);
 });
