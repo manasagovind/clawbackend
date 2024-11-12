@@ -1,4 +1,4 @@
-CREATE DATABASE todolist;
+CREATE DATABASE income_expenses;
 
 CREATE TABLE todo(
     todo_id SERIAL PRIMARY KEY,
